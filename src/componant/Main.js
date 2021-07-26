@@ -13,7 +13,7 @@ export class Main extends Component {
     }
 
     componentDidMount=async (item)=>{
-        let allDrink= await axios.get(`${this.state.REACT_APP_SERVER}/show`)
+        let allDrink= await axios.get(`${this.state.REACT_APP_SERVER}/drink`)
         this.setState({
             allDrink:allDrink.data,
             showStatus:true

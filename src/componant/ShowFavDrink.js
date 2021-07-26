@@ -13,7 +13,7 @@ export class DrinkCard extends Component {
     }
 
     componentDidMount=async()=>{
-        let allFavDrink = await axios.get(`${this.state.REACT_APP_SERVER}/showFav`)
+        let allFavDrink = await axios.get(`${this.state.REACT_APP_SERVER}/drinkFav`)
         this.setState({
             allFavDrink:allFavDrink.data,
             showStatus:true

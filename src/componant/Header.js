@@ -10,7 +10,7 @@ export class Header extends Component {
 
                     <Nav className="me-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/favorite">Favorite Drink</Nav.Link>
+                        <Nav.Link href="/drinkFav">Favorite Drink</Nav.Link>
                     </Nav>
                 </Navbar>
             </div>

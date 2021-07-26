@@ -12,7 +12,7 @@ export class DrinkCard extends Component {
 
     addFavDrink = async (item) => {
         let favDrink = item;
-        await axios.post(`${this.state.REACT_APP_SERVER}/addFav`, favDrink)
+        await axios.post(`${this.state.REACT_APP_SERVER}/drink`, favDrink)
     }
     render() {
         return (

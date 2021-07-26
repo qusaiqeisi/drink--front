@@ -20,7 +20,7 @@ export class FaverDrink extends Component {
     // ...............delete
     deleteFavDrink=async(item)=>{
         let id = item._id;
-        let dataAfterDelete = await axios.delete(`${this.state.REACT_APP_SERVER}/showDelete/${id}`)
+        let dataAfterDelete = await axios.delete(`${this.state.REACT_APP_SERVER}/drinkFav/${id}`)
         this.setState({
             allFavDrink: dataAfterDelete.data 
         })
@@ -66,7 +66,7 @@ updateFavDrink= async (e)=>{
         idDrink:this.state.strDrink
     }
 
-    let updateFavData = await axios.put(`${this.state.REACT_APP_SERVER}/showupdate/${this.state.id}`,updateData)
+    let updateFavData = await axios.put(`${this.state.REACT_APP_SERVER}/drinkFav/${this.state.id}`,updateData)
 
     this.setState({
         allFavDrink:updateFavData.data,
